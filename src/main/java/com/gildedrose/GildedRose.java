@@ -11,7 +11,7 @@ class GildedRose {
         for (Item item : items) {
             CustomItem customItem = ItemFactory.createCustomItem(item);
             if (customItem.canBeUpdated()) {
-                customItem.updateItem();
+                customItem.update();
             }
         }
     }
