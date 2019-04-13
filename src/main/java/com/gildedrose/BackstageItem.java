@@ -7,7 +7,7 @@ public class BackstageItem extends CustomItem {
     }
 
     public void update() {
-        decreaseSellIn();
+        decreaseSelling();
         increaseQuality();
         if (sellingIn11Days() && canBeUpdated()) {
             increaseQuality();
@@ -31,10 +31,5 @@ public class BackstageItem extends CustomItem {
 
     private boolean sellingIn11Days() {
         return item.sellIn < 11;
-    }
-
-
-    private void decreaseSellIn() {
-        item.sellIn -= 1;
     }
 }
