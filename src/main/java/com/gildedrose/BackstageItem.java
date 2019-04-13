@@ -1,9 +1,10 @@
 package com.gildedrose;
 
-public class BackstageItem implements ItemStrategy {
+public class BackstageItem extends CustomItem {
     private Item item;
 
     BackstageItem(Item item) {
+        super(item);
         this.item = item;
     }
 

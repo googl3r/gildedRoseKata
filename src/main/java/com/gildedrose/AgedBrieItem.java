@@ -1,9 +1,10 @@
 package com.gildedrose;
 
-public class AgedBrieItem implements ItemStrategy {
+public class AgedBrieItem extends CustomItem {
     private Item item;
 
     AgedBrieItem(Item item) {
+        super(item);
         this.item = item;
     }
     public void updateItem() {

@@ -1,9 +1,10 @@
 package com.gildedrose;
 
-public class NormalItem implements ItemStrategy {
+public class NormalItem extends CustomItem {
     private Item item;
 
     NormalItem(Item item) {
+        super(item);
         this.item = item;
     }
     public void updateItem() {

@@ -1,9 +1,10 @@
 package com.gildedrose;
 
-public class ConjuredItem implements ItemStrategy {
+public class ConjuredItem extends CustomItem {
     private Item item;
 
     ConjuredItem(Item item) {
+        super(item);
         this.item = item;
     }
 
