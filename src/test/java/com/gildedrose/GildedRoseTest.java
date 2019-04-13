@@ -44,7 +44,7 @@ class GildedRoseTest {
 
     @Nested
     class AgedBrieItem {
-        public static final int INITIAL_ITEM_QUALITY = 10;
+        private static final int INITIAL_ITEM_QUALITY = 10;
         private static final int INCREASE_ONCE_ITEM_QUALITY = 11;
         private static final int INCREASE_TWICE_ITEM_QUALITY = 12;
 
