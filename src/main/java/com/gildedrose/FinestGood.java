@@ -1,11 +1,11 @@
 package com.gildedrose;
 
-public abstract class CustomItem {
+public abstract class FinestGood {
     private static final int HIGHEST_QUALITY = 50;
     private static final int LOWEST_QUALITY = 0;
     protected Item item;
 
-    CustomItem(Item item) {
+    FinestGood(Item item) {
         this.item = item;
     }
     protected boolean canBeUpdated() {

@@ -6,18 +6,18 @@ class ItemFactory {
     private static final String SULFURAS_ITEM = "Sulfuras, Hand of Ragnaros";
     private static final String CONJURED_ITEM = "Conjured Mana Cake";
 
-    static CustomItem createCustomItem(Item item) {
+    static FinestGood createFinestGood(Item item) {
         switch (item.name) {
             case AGED_BRIE_ITEM:
-                return new AgedBrieItem(item);
+                return new AgedBrie(item);
             case BACKSTAGE_ITEM:
-                return new BackstageItem(item);
+                return new Backstage(item);
             case SULFURAS_ITEM:
-                return new SulfurasItem(item);
+                return new Sulfuras(item);
             case CONJURED_ITEM:
-                return new ConjuredItem(item);
+                return new Conjured(item);
             default:
-                return new NormalItem(item);
+                return new Normal(item);
 
         }
     }

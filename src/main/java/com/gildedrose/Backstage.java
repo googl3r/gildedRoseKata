@@ -1,8 +1,8 @@
 package com.gildedrose;
 
-public class BackstageItem extends CustomItem {
+public class Backstage extends FinestGood {
 
-    BackstageItem(Item item) {
+    Backstage(Item item) {
         super(item);
     }
 

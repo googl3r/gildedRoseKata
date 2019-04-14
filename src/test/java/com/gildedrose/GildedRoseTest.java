@@ -16,7 +16,7 @@ class GildedRoseTest {
     }
 
     @Nested
-    class NormalItem {
+    class Normal {
         int INITIAL_QUALITY = 3;
         int QUALITY_DECREASED_ONCE = 2;
         int QUALITY_DECREASED_TWICE = 1;
@@ -43,7 +43,7 @@ class GildedRoseTest {
     }
 
     @Nested
-    class AgedBrieItem {
+    class AgedBrie {
         private static final int INITIAL_ITEM_QUALITY = 10;
         private static final int INCREASE_ONCE_ITEM_QUALITY = 11;
         private static final int INCREASE_TWICE_ITEM_QUALITY = 12;
@@ -71,7 +71,7 @@ class GildedRoseTest {
     }
 
     @Nested
-    class BackStageItem {
+    class BackStage {
         private static final int INITIAL_ITEM_QUALITY = 10;
         private static final int INCREASE_ITEM_QUALITY_TWICE = 12;
         private static final int INCREASE_ITEM_QUALITY_THRICE = 13;
@@ -110,7 +110,7 @@ class GildedRoseTest {
     }
 
     @Nested
-    class SulfurasItem {
+    class Sulfuras {
         private static final int SULFURAS_ITEM_QUALITY = 5;
         private Item surlfurasItem = new Item("Sulfuras, Hand of Ragnaros", 5,
                 SULFURAS_ITEM_QUALITY);
@@ -130,7 +130,7 @@ class GildedRoseTest {
     }
 
     @Nested
-    class ConjuredItem {
+    class Conjured {
 
         @Test
         void updateQuality() {

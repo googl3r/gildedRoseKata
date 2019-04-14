@@ -1,19 +1,24 @@
 package com.gildedrose;
 
-public class NormalItem extends CustomItem {
+public class Conjured extends FinestGood {
 
-    NormalItem(Item item) {
+    Conjured(Item item) {
         super(item);
     }
+
+    @Override
     public void update() {
         decreaseSelling();
         if (sellingPassed()) {
-            decreaseQualityBy(2);
+            decreaseQualityBy(4);
         } else {
-            decreaseQualityBy(1);
+            decreaseQualityBy(2);
         }
+
     }
+
     private void decreaseQualityBy(int quality) {
         item.quality = item.quality - quality;
     }
+
 }

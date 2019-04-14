@@ -1,7 +1,7 @@
 package com.gildedrose;
 
-public class AgedBrieItem extends CustomItem {
-    AgedBrieItem(Item item) {
+public class AgedBrie extends FinestGood {
+    AgedBrie(Item item) {
         super(item);
     }
     public void update() {

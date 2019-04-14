@@ -9,9 +9,9 @@ class GildedRose {
 
     void updateQuality() {
         for (Item item : items) {
-            CustomItem customItem = ItemFactory.createCustomItem(item);
-            if (customItem.canBeUpdated()) {
-                customItem.update();
+            FinestGood finestGood = ItemFactory.createFinestGood(item);
+            if (finestGood.canBeUpdated()) {
+                finestGood.update();
             }
         }
     }
